@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="quiz-container">
+  <div style="display: flex; align-items: center; justify-content: end;">
+  <h3 id="timer" style=" text-align: end;margin-top: -20px;">Time Left: 00:01:00 </h3>
+  <video autoplay="true" id="videoElement" width="250" height="200" style="margin-top: -30px; margin-left: 20px;" ></video>
+</div>
+
+  
+    <div id="question" class="question" style="margin-top:60px ;"></div>
+    <div id="options" class="options"></div>
+    <div id="error-message" style="color: red;"></div>
+
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+
+    <div id="quiz-progress">
+      <!-- Indicator for each question -->
+      <div class="question-indicator"></div>
+      <div class="question-indicator"></div>
+      <div class="question-indicator attempted"></div>
+      <!-- Add more indicators as needed -->
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
